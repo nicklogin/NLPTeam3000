@@ -1,0 +1,95 @@
+	# newdoc id = senti_testset/12943.txt	Unnamed: 1	Unnamed: 2	Unnamed: 3	Unnamed: 4	Unnamed: 5	Unnamed: 6	Unnamed: 7	Unnamed: 8	Unnamed: 9	Аспект	Оценка
+0	# newpar											
+1	# sent_id = 1											
+2	# text = Были сегодня первый раз!											
+3	1	Были	быть	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0.0	root	_	_		
+4	2	сегодня	сегодня	ADV	_	Degree=Pos	1.0	advmod	_	_		
+5	3	первый	первый	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	4.0	amod	_	_		
+6	4	раз	раз	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1.0	obl	_	SpaceAfter=No		
+7	5	!	!	PUNCT	_	_	1.0	punct	_	_		
+8												
+9	# sent_id = 2											
+10	# text = Все очень понравилось.											
+11	1	Все	все	PRON	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3.0	nsubj	_	_		
+12	2	очень	очень	ADV	_	Degree=Pos	3.0	advmod	_	_		
+13	3	понравилось	понравиться	VERB	_	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	0.0	root	_	SpaceAfter=No		
+14	4	.	.	PUNCT	_	_	3.0	punct	_	_		
+15												
+16	# sent_id = 3											
+17	# text = И место на диванчиках нашлось, и официантка очень приветливая, но ненавязчивая, интерьер приятный, живая музыка тоже расслабляет, вполне и под нее можно вести беседу.											
+18	1	И	и	CCONJ	_	_	5.0	cc	_	_		
+19	2	место	место	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	5.0	nsubj	_	_		
+20	3	на	на	ADP	_	_	4.0	case	_	_		
+21	4	диванчиках	диванчик	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Plur	2.0	nmod	_	_		
+22	5	нашлось	найтись	VERB	_	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	0.0	root	_	SpaceAfter=No		
+23	6	,	,	PUNCT	_	_	10.0	punct	_	_		
+24	7	и	и	CCONJ	_	_	10.0	cc	_	_		
+25	8	официантка	официантка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	10.0	nsubj	_	_		
+26	9	очень	очень	ADV	_	Degree=Pos	10.0	obl	_	_	Service	1.0
+27	10	приветливая	приветливый	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	5.0	conj	_	SpaceAfter=No	Service	1.0
+28	11	,	,	PUNCT	_	_	21.0	punct	_	_		
+29	12	но	но	CCONJ	_	_	21.0	cc	_	_		
+30	13	ненавязчивая	ненавязчивый	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	19.0	amod	_	SpaceAfter=No	Service	1.0
+31	14	,	,	PUNCT	_	_	16.0	punct	_	_		
+32	15	интерьер	интерьер	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	16.0	nsubj	_	_		
+33	16	приятный	приятный	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	13.0	conj	_	SpaceAfter=No		
+34	17	,	,	PUNCT	_	_	18.0	punct	_	_		
+35	18	живая	живой	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	13.0	conj	_	_		
+36	19	музыка	музыка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	21.0	nsubj	_	_		
+37	20	тоже	тоже	PART	_	_	21.0	advmod	_	_		
+38	21	расслабляет	расслабляуть	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5.0	conj	_	SpaceAfter=No		
+39	22	,	,	PUNCT	_	_	27.0	punct	_	_		
+40	23	вполне	вполне	ADV	_	Degree=Pos	27.0	advmod	_	_		
+41	24	и	и	CCONJ	_	_	27.0	cc	_	_		
+42	25	под	под	ADP	_	_	26.0	case	_	_		
+43	26	нее	она	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3	28.0	obl	_	_		
+44	27	можно	можно	ADV	_	Degree=Pos	21.0	advmod	_	_		
+45	28	вести	вести	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	27.0	csubj	_	_		
+46	29	беседу	беседа	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	28.0	obj	_	SpaceAfter=No		
+47	30	.	.	PUNCT	_	_	5.0	punct	_	_		
+48												
+49	# sent_id = 4											
+50	# text = Обслуживание оперативное, ждать 1-2 минуты пиво, гренки чуть дольше, пиво отличное!!! я в восторге!!! обстановка очень уютная. а еще радует что недалеко от дома такое прекрасное заведение есть!!!											
+51	1	Обслуживание	обслуживание	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0.0	root	_	_	Service	1.0
+52	2	оперативное	оперативный	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	1.0	amod	_	SpaceAfter=No		
+53	3	,	,	PUNCT	_	_	4.0	punct	_	_		
+54	4	ждать	ждать	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	1.0	conj	_	_		
+55	5	1	1	NUM	_	_	8.0	nummod	_	SpaceAfter=No		
+56	6	-	-	PUNCT	_	_	7.0	punct	_	SpaceAfter=No		
+57	7	2	2	NUM	_	_	5.0	nummod	_	_		
+58	8	минуты	минута	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4.0	obl	_	_		
+59	9	пиво	пиво	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	4.0	obj	_	SpaceAfter=No		
+60	10	,	,	PUNCT	_	_	11.0	punct	_	_		
+61	11	гренки	гренка	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	9.0	conj	_	_		
+62	12	чуть	чуть	ADV	_	Degree=Pos	13.0	advmod	_	_		
+63	13	дольше	долго	ADV	_	Degree=Cmp	11.0	advmod	_	SpaceAfter=No		
+64	14	,	,	PUNCT	_	_	15.0	punct	_	_		
+65	15	пиво	пиво	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	4.0	parataxis	_	_		
+66	16	отличное	отличный	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	15.0	appos	_	SpaceAfter=No	Food	1.0
+67	17	!	!	PUNCT	_	_	16.0	punct	_	SpaceAfter=No		
+68	18	!	!	PUNCT	_	_	16.0	punct	_	SpaceAfter=No		
+69	19	!	!	PUNCT	_	_	18.0	punct	_	_		
+70	20	я	я	PRON	_	Case=Nom|Number=Sing|Person=1	22.0	nsubj	_	_		
+71	21	в	в	ADP	_	_	22.0	case	_	_		
+72	22	восторге	восторг	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	16.0	parataxis	_	SpaceAfter=No		
+73	23	!	!	PUNCT	_	_	22.0	punct	_	SpaceAfter=No		
+74	24	!	!	PUNCT	_	_	22.0	punct	_	SpaceAfter=No		
+75	25	!	!	PUNCT	_	_	4.0	punct	_	_		
+76	26	обстановка	обстановка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	28.0	nsubj	_	_		
+77	27	очень	очень	ADV	_	Degree=Pos	28.0	obl	_	_		
+78	28	уютная	уютный	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	4.0	parataxis	_	SpaceAfter=No		
+79	29	.	.	PUNCT	_	_	32.0	punct	_	_		
+80	30	а	а	CCONJ	_	_	32.0	cc	_	_		
+81	31	еще	еще	ADV	_	Degree=Pos	32.0	advmod	_	_		
+82	32	радует	радовать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28.0	conj	_	_		
+83	33	что	что	PRON	_	Case=Acc	32.0	obj	_	_		
+84	34	недалеко	недалеко	ADV	_	Degree=Pos	32.0	nsubj	_	_		
+85	35	от	от	ADP	_	_	36.0	case	_	_		
+86	36	дома	дом	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	32.0	obl	_	_		
+87	37	такое	такой	DET	_	Case=Acc|Gender=Neut|Number=Sing	39.0	det	_	_		
+88	38	прекрасное	прекрасный	ADJ	_	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	39.0	amod	_	_		
+89	39	заведение	заведение	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	32.0	obj	_	_		
+90	40	есть	быть	INTJ	_	_	39.0	parataxis	_	SpaceAfter=No		
+91	41	!	!	PUNCT	_	_	40.0	punct	_	SpaceAfter=No		
+92	42	!	!	PUNCT	_	_	40.0	punct	_	SpaceAfter=No		
+93	43	!	!	PUNCT	_	_	1.0	punct	_	SpacesAfter=\n		
