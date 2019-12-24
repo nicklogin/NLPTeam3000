@@ -1,4 +1,4 @@
-import json
+import json, sys
 
 def load_json(f):
     with open(f, 'r', encoding='utf-8') as inp:
@@ -59,4 +59,4 @@ if name == '__main__':
     get_tonal_markup(wordlist1, bigram_list1, trigram_list1,
                     wordlist2, bigram_list2, trigram_list2,
                     aspects=aspects,
-                    conllu_folder='')
+                    conllu_folder=sys.argv[1])
