@@ -55,7 +55,7 @@ trigram_list2 = {k:v for k,v in service.items() if k.count(' ') == 2}
 
 aspects = ['food', 'service']
 
-if name == '__main__':
+if __name__ == '__main__':
     get_tonal_markup(wordlist1, bigram_list1, trigram_list1,
                     wordlist2, bigram_list2, trigram_list2,
                     aspects=aspects,
