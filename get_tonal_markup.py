@@ -18,20 +18,43 @@ def get_tonal_markup(wordlist1, bigram_list1, trigram_list1, wordlist2, bigram_l
     for sent_id, sent in enumerate(t):
       sent_id += 1
       t_id1 = 0
-      for token1, token2, token3 in zip([i['lemma'] for i in sent], [i['lemma'] for i in sent[1:]]+[''], [i['lemma'] for i in sent[2:]]+['','']):
+      token_iter = iter(zip([i['lemma'] for i in sent], [i['lemma'] for i in sent[1:]]+[''], [i['lemma'] for i in sent[2:]]+['','']))
+      for token1, token2, token3 in token_iter:
         t_id1 += 1
         trigram = token1+' '+token2+' '+token3
         bigram = token1+' '+token2
         if trigram in trigram_list1:
           outp.append(str(sent_id)+'\t'+str(t_id1)+','+str(t_id1+2)+'\t'+aspects[0]+'\t'+str(trigram_list1[trigram]))
-        elif bigram in bigram_list1:
-          outp.append(str(sent_id)+'\t'+str(t_id1)+','+str(t_id1+1)+'\t'+aspects[0]+'\t'+str(bigram_list1[bigram]))
-        elif token1 in wordlist1:
-          outp.append(str(sent_id)+'\t'+str(t_id1)+'\t'+aspects[0]+'\t'+str(wordlist1[token1]))
+          try:
+            token1, token2, token3 = next(token_iter)
+            token1, token2, token3 = next(token_iter)
+            continue
+          except:
+            break
         elif trigram in trigram_list2:
           outp.append(str(sent_id)+'\t'+str(t_id1)+','+str(t_id1+2)+'\t'+aspects[1]+'\t'+str(trigram_list2[trigram]))
+          try:
+            token1, token2, token3 = next(token_iter)
+            token1, token2, token3 = next(token_iter)
+            continue
+          except:
+            break
+        elif bigram in bigram_list1:
+          outp.append(str(sent_id)+'\t'+str(t_id1)+','+str(t_id1+1)+'\t'+aspects[0]+'\t'+str(bigram_list1[bigram]))
+          try:
+            token1, token2, token3 = next(token_iter)
+            continue
+          except:
+            break
         elif bigram in bigram_list2:
           outp.append(str(sent_id)+'\t'+str(t_id1)+','+str(t_id1+1)+'\t'+aspects[1]+'\t'+str(bigram_list2[bigram]))
+          try:
+            token1, token2, token3 = next(token_iter)
+            continue
+          except:
+            break
+        elif token1 in wordlist1:
+          outp.append(str(sent_id)+'\t'+str(t_id1)+'\t'+aspects[0]+'\t'+str(wordlist1[token1]))
         elif token1 in wordlist2:
           outp.append(str(sent_id)+'\t'+str(t_id1)+'\t'+aspects[1]+'\t'+str(wordlist2[token1]))
     
@@ -53,7 +76,7 @@ wordlist2 = {k:v for k,v in service.items() if k.count(' ') == 0}
 bigram_list2 = {k:v for k,v in service.items() if k.count(' ') == 1}
 trigram_list2 = {k:v for k,v in service.items() if k.count(' ') == 2}
 
-aspects = ['food', 'service']
+aspects = ['Food', 'Service']
 
 if __name__ == '__main__':
     get_tonal_markup(wordlist1, bigram_list1, trigram_list1,
