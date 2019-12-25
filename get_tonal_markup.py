@@ -1,4 +1,4 @@
-import json, sys
+import json, sys, os
 
 def load_json(f):
     with open(f, 'r', encoding='utf-8') as inp:
